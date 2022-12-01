@@ -17,7 +17,7 @@ app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended:true}))
 
 
-const clusterLink="mongodb+srv://samirlohiya909:Lohiya123@samirlohiya.nszppy8.mongodb.net/school-management?retryWrites=true&w=majority"
+const clusterLink="mongodb+srv://samirlohiya909:Lohiya123@samirlohiya.nszppy8.mongodb.net/Assignment2AgroOrganization?retryWrites=true&w=majority"
 mongoose.connect(clusterLink,{useNewUrlParser:true})
 .then(()=>console.log("MongoDB is connected"))
 .catch(err=>console.log(err))

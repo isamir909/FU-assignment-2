@@ -79,3 +79,20 @@ otherwise, it will create a new student record.
 - Also Search By Student Name
 
 
+## assumptions
+
+
+## Admin API 
+- has access to add crop ,property
+
+
+## User API
+- it has access to get all the data 
+- select the crops according to their choice
+- can update field history 
+
+
+
+1.region
+2.property
+3.fields

@@ -12,7 +12,6 @@ try {
    let decodedToken = jwt.verify(newToken, "school@#$%^&*Management")
    if (!decodedToken) return res.status(401).send({ status: false, msg: "Authentication failed" });
 
-   console.log(req.params.teacherId);
     if(decodedToken.id!==req.params.teacherId){return res.status(403).send({status:false,message:"authorization failed you are not authorized "})}
 
    req.body["teacherId"]=decodedToken.id

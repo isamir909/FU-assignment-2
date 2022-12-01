@@ -1,6 +1,6 @@
 const passport=require('passport')
 const GoogleStrategy = require( 'passport-google-oauth2' ).Strategy;
-const userModel=require("../src/model/userModel")
+const userModel=require("../src/model/user/userModel")
 
 passport.use(new GoogleStrategy({
     clientID:    "135045554811-s816f3l51a85jtnmekk8b9latifvv0lb.apps.googleusercontent.com",
