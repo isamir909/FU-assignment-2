@@ -1,0 +1,46 @@
+=>property will already exist
+{
+orgID:
+ ownership:{type:String,enum:["owned","lease"]},
+ purchaseDate:{type:String},
+ leasePeriod:{type:String},
+ {code:add key and populaye region data and field data}
+}
+
+=>Region Schema
+{
+propID:
+ stateName:{type:String},
+  avgTemperature:{type:String},
+  avgMoisture:{type:String},
+  climate:{type:String,enum:["dry","normal","moisture"]},
+}
+
+
+=>field Schema
+
+{
+regionID:
+propertyID:
+
+}
+
+
+=>Crop Cycle Property
+
+{
+magor 3 cycle 
+
+}
+
+
+=>Crop Cycle Field
+{
+fieldID:
+CropCyclePropertyID:
+
+}
+
+crop{
+cropcycle field:
+}

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const objectID=mongoose.schema.types.objectId
+const objectID=mongoose.Schema.Types.ObjectId
 
-const cropPropertyModel=new mongoose.schema({
+const cropPropertyModel=new mongoose.Schema({
   
   propertyID:{type:objectID,required:true,ref:"property"},
 

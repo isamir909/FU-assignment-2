@@ -1,25 +1,27 @@
 const mongoose = require("mongoose");
-const objectID=mongoose.schema.types.objectId
+const objectID=mongoose.Schema.Types.ObjectId
 
-const fieldModel=new mongoose.schema({
+const fieldModel=new mongoose.Schema({
     length:{type:String},
 
     width:{type:String},
-
-  address:{
+    address:{
     plotNo:{type:String},
     landMark:{type:String},
     city:{type:String},
     pinCodeNo:{type:Number},
   },
+  
   cropCycleHistory:{
-    cropCycleID:{type:objectID,required:true,ref:"cropCycle"}
+    cropCycleID:{type:objectID,ref:"cropCycle"}
 
   },
  
   avgWaterAvailable:{type:String,trim:true,required:true},
+ 
   regionID:{type:objectID,required:true,ref:"region"},
-  propertyID:{type:objectID,required:true,ref:"property"},
+
+
 
 },{timestamps:true})
 

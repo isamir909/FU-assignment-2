@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 
-const regionModel=new mongoose.schema({
+const regionModel=new mongoose.Schema({
    
   stateName:{type:String},
   
@@ -10,7 +10,20 @@ const regionModel=new mongoose.schema({
   avgMoisture:{type:String},
   
   climate:{type:String,enum:["dry","normal","moisture"]},
+
+  // propertyID
   
 },{timestamps:true})
 
 module.exports=mongoose.model("region",regionModel)
+
+
+// organization schema
+/*{
+  x
+}*/
+
+// property (org ID)
+
+// region (pro,org)
+// field (org,)

@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
-const objectID=mongoose.schema.types.objectId
+const objectID=mongoose.Schema.Types.ObjectId
 
-const cropCycleFieldModel=new mongoose.schema({
+const cropCycleFieldModel=new mongoose.Schema({
   
   avgWater:{type:String,required:true,trim:true},
  
